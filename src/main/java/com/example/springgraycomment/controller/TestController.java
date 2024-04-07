@@ -19,7 +19,8 @@ public class TestController {
      * getUser
      */
     @GetMapping(value = "getUser")
-    public void getUser() {
-        System.out.println("getUser");
+    public String getUser() {
+        System.out.println("comment-getUser");
+        return "comment-getUser";
     }
 }
