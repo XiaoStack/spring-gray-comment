@@ -1,0 +1,16 @@
+server:
+  port: 8884
+  servlet:
+    context-path: /comment
+spring:
+  application:
+    name: spring-gray-comment
+  cloud:
+    nacos:
+      discovery:
+        namespace: 89bdd4e0-a92c-412d-9a67-a4e4a9531d05
+        password: nacos
+        server-addr: 192.168.0.110:8848
+        username: nacos
+        metadata:
+          grayTag: true # 配置元数据
