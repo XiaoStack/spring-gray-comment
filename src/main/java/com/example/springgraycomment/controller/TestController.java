@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * XXXX
+ * 测试控制器
  *
  * @author yinyong
  * @version 1.0
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/api/test")
 public class TestController {
     /**
-     * getUser
+     * getComment
      */
-    @GetMapping(value = "getUser")
-    public String getUser(@RequestHeader(required = false) String grayTag) {
+    @GetMapping("/getComment")
+    public String getComment(@RequestHeader(required = false) String grayTag) {
         return GrayConstant.GRAY_VALUE.equals(grayTag) ? "来自灰度服务的评论" : "来自正常服务的评论";
     }
 }
